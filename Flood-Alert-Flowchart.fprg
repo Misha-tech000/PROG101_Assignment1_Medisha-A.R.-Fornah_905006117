@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="programming assing=chart"/>
+        <attribute name="authors" value="MADAM FONNAH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-06 12:27:03 PM"/>
+        <attribute name="created" value="TUFEQU0gRk9OTkFIO01JUkE7MjAyNi0xMS0wNjsxMTo0NDozNSBBTTsyMzg4"/>
+        <attribute name="edited" value="TUFEQU0gRk9OTkFIO01JUkE7MjAyNi0xMS0wNjsxMjoyNzowMyBQTTsyOzI1MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to the Flood Alert and Community Reporting System&quot;" newline="True"/>
+            <declare name="reporterRole" type="String" array="False" size=""/>
+            <declare name="location" type="String" array="False" size=""/>
+            <declare name="waterLevel" type="String" array="False" size=""/>
+            <declare name="roadCondition" type="String" array="False" size=""/>
+            <output expression="&quot;Your role&quot;" newline="True"/>
+            <input variable="reporterRole"/>
+            <output expression="&quot;Your location&quot;" newline="True"/>
+            <input variable="location"/>
+            <output expression="&quot;What is the water level&quot;" newline="True"/>
+            <input variable="waterLevel"/>
+            <output expression="&quot;The Condition of the road&quot;" newline="True"/>
+            <input variable="roadConditon"/>
+            <declare name="alertMessage" type="String" array="False" size=""/>
+            <if expression="location &lt;&gt; &quot;&quot; AND&#13;&#10;(reporterRole = &quot;RESIDENT&quot; OR reporterRole = &quot;COORDINATOR&quot;) AND&#13;&#10;(waterLevel = &quot;LOW&quot; OR waterLevel = &quot;MODERATE&quot; OR waterLevel = &quot;HIGH&quot;) AND&#13;&#10;(roadCondition = &quot;PASSABLE&quot; OR roadCondition = &quot;DIFFICULT&quot; OR roadCondition = &quot;BLOCKED&quot;)">
+                <then>
+                    <if expression="roadCondition = &quot;BLOCKED&quot;">
+                        <then>
+                            <output expression="&quot;WARNING: Road is blocked. Avoid this route.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="roadCondition = &quot;BLOCKED&quot;">
+                                <then>
+                                    <output expression="&quot;WARNING: Road is blocked. Avoid this route.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="waterLevel = &quot;HIGH&quot;">
+                                        <then>
+                                            <output expression="&quot;HIGH FLOOD ALERT: Take immediate precautions.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="waterLevel = &quot;MODERATE&quot; OR roadCondition = &quot;DIFFICULT&quot;">
+                                                <then>
+                                                    <output expression="&quot;CAUTION: Flood conditions may affect movement.&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;LOW CONCERN: Conditions are relatively safe.&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <output expression="alertMessage" newline="True"/>
+                    <output expression="&quot;Report organized for coordinator review.&quot;" newline="True"/>
+                    <output expression="&quot;Thank you for using the Flood Alert System.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Invalid report. Please check your information&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
