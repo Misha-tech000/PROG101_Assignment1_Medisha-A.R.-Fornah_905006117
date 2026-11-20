@@ -10,7 +10,7 @@
 
 
 
- 1. Project Overview
+ ## 1. Project Overview
 
 The Flood Alert and Community Reporting System is a proposed logical system designed to help residents and community coordinators report flooding conditions in their communities.
 
@@ -20,16 +20,18 @@ The system is designed to collect flood-report information, validate the submitt
 
 This project is an academic logical design and does not represent a fully developed or operational application.
 
- 2. Problem Statement
+
+## 2. Problem Statement
 
 Flooding is a recurring challenge in parts of Freetown. During flooding incidents, information about affected locations, water levels, and road conditions may be difficult to collect and organise consistently.
 
 The proposed system addresses this challenge by providing a structured logical process for community members to submit flood reports containing relevant information.
 
-3. Aim of the Project
+## 3. Aim of the Project
 The aim is to design a simple and understandable system that receives, validates, classifies, and organises community flood reports to support information sharing and awareness.
 
- 4. Objectives
+
+## 4. Objectives
 
 The system is designed to:
 
@@ -40,8 +42,9 @@ The system is designed to:
 - Display appropriate informational messages.
 - Organise submitted reports for review.
 - Demonstrate fundamental programming concepts.
+  
 
- 5. How the Proposed System Works
+## 5. How the Proposed System Works
 
 The logical process follows these steps:
 
@@ -55,8 +58,9 @@ The logical process follows these steps:
 8. Organise the report for review.
 9. Ask whether another report should be submitted.
 10. Continue or end the process.
+    
 
- 6. Programming Concepts Demonstrated
+ ## 6. Programming Concepts Demonstrated
 
 This project demonstrates:
 
@@ -68,16 +72,18 @@ This project demonstrates:
 - **Functions and modules:** Dividing the system into smaller logical components.
 - **Algorithms:** Step-by-step instructions for solving the problem.
 - **Computational thinking:** Decomposition, pattern recognition, abstraction, and algorithm design.
+  
 
- 7. Functional Modules
+## 7. Functional Modules
 
 The proposed design contains the following modules:
 
 - `ValidateReport()` – checks whether required information is valid.
 - `ClassifyReport()` – evaluates the reported conditions and determines the informational category.
 - `DisplayAlert()` – displays the appropriate message to the user.
+  
 
- 8. Community Impact
+## 8. Community Impact
 
 The proposed system could help community members organise flood observations and provide structured information for review.
 
@@ -90,24 +96,28 @@ Potential beneficiaries include:
 
 The effectiveness of any future implementation would depend on accurate reporting, accessibility, communication, verification, and collaboration with relevant authorities.
 
- 9. Sustainable Development Goals (SDGs)
+
+## 9. Sustainable Development Goals (SDGs)
 
 The project relates to:
 
 - **SDG 11 – Sustainable Cities and Communities:** Supporting safer and more resilient communities.
 - **SDG 13 – Climate Action:** Supporting preparedness and awareness of climate-related hazards.
+  
 
-10. Open Source Software
+## 10. Open Source Software
 
 A future implementation could be developed as open-source software, allowing developers, students, and community contributors to inspect, improve, modify, and adapt the system.
 
 Open-source development could support collaboration, transparency, accessibility, and community participation.
 
- 11. Digital Public Goods
+
+ ## 11. Digital Public Goods
 
 The system could potentially become a Digital Public Good if a future version meets relevant standards for openness, licensing, documentation, accessibility, privacy, and public benefit.
 
- 12. Project Limitations
+
+## 12. Project Limitations
 
 This project is a logical design and does not currently include:
 
@@ -120,7 +130,8 @@ This project is a logical design and does not currently include:
 
 The report classifications are illustrative programming rules and are not official flood-warning levels.
 
- 13. Project Files
+
+## 13. Project Files
 
 This repository is intended to contain the project documentation and design materials, including:
 
@@ -129,16 +140,17 @@ This repository is intended to contain the project documentation and design mate
 - Flowchart.
 - README documentation.
 - Relevant submission evidence and screenshots.
+  
 
- 14. Conclusion
+## 14. Conclusion
 
 The Flood Alert and Community Reporting System demonstrates how fundamental programming logic and computational thinking can be used to design a proposed solution to a community challenge in Sierra Leone.
 
 The project focuses on structured reporting, validation, decision-making, repetition, modular design, and community awareness.
 
----
 
- References
+
+## References
 
 - Turay, B., Gbetuwa, S. and Turay, A. (2023). *Households’ Readiness and Community-Based Organisations’ Role in Flood Management: The Case of Freetown City’s Coastal Area.*
 - Koroma, A. O., Saber, M. and Abdelbaki, C. (2024). *Urban Flood Vulnerability Assessment in Freetown, Sierra Leone: AHP Approach.*
